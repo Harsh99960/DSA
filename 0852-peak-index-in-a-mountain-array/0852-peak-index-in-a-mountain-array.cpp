@@ -12,6 +12,6 @@ public:
             else lo = mid+1;
         }
 
-        return -1;
+        return 1000;
     }
 };
