@@ -2,12 +2,11 @@ class Solution {
 public:
     int majorityElement(vector<int>& nums) {
        sort(nums.begin(),nums.end());
-       return nums[nums.size()/2];
+       return nums[nums.size()/2]; //O(nlogn) because of using inbuilt sorting
     } 
 };
 
-
-
+//second approach O(n^2)
 // for(int i = 1; i<n; i++){
 //             int j = i;
 //             while(j>=1){
